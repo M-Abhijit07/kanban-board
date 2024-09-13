@@ -1,0 +1,140 @@
+/* App-wide styles */
+body{
+  background-color: #f4f5f9;
+}
+
+.display-button{
+  display:flex;
+  align-items: center;
+  font-size: large;
+  background-color : transparent;
+  cursor: pointer;
+  border: transparent;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+.dropbox{
+    position: absolute;
+    top:100%;
+    left:0;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 1.5em;
+  text-align:left;
+}
+
+/* Select and Label styles for the header */
+.App-header label{
+  margin: 0 10px;
+  color: black;
+  font-size: medium;
+}
+
+.App-header select {
+  padding: 5px 10px;
+  border-color: rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+/* Kanban Board styles */
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Kanban Column styles */
+.kanban-column {
+  width: 300px;
+  margin: 0 10px;
+  padding: 15px;
+}
+
+.kanban-column-title {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Kanban Card styles */
+.kanban-card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative; /* For absolute positioning of the avatar */
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.kanban-card-id {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.kanban-card-title {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.kanban-card-tag {
+  display: flex;
+  border-radius: 4px;
+}
+
+.kanban-card-tag span {
+  padding: 2px 6px;
+  font-size: 0.6em;
+  color: gray;
+}
+
+/* User Avatar styles */
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .kanban-board {
+    flex-direction: column;
+  }
+
+  .kanban-column {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .user-avatar {
+    width: 25px; /* Slightly smaller on small devices */
+  }
+}
